@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetcore_webapitest:
+    image: ${DOCKER_REGISTRY-}aspnetcorewebapitest
+    build:
+      context: .
+      dockerfile: AspNetCore_WebAPITest/Dockerfile
